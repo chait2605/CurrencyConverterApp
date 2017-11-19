@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CurrencyExchangeApply</string>
+    <string name="action_settings">Settings</string>
+    <string name="layoutTitle">Currency Exchange</string>
+    <string name="buttonApply">Apply</string>
+    <string name="buttonClose">Close</string>
+
+</resources>

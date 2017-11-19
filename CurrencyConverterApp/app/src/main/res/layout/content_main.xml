@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/appTitle"
+        android:id="@+id/appTitle"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:layout_gravity="center_horizontal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/AmountLabel"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/textViewAmountLabel" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/editTextAmount"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/Amount" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorBlack"
+        android:text="@string/ConvertToLabel"
+        android:id="@+id/textViewConvertToLabel" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09" />
+
+    <RadioGroup
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.01"
+        android:id="@+id/radioButtonGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButtonRupee"
+            android:id="@+id/radioButtonRupee"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButtonPound"
+            android:id="@+id/radioButtonPound"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButtonYen"
+            android:id="@+id/radioButtonYen"
+            android:checked="false" />
+    </RadioGroup>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09"
+        android:layout_gravity="center_horizontal" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="30dp">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorBlack"
+        android:textColor="@color/colorWhite"
+        android:text="@string/buttonConvert"
+        android:id="@+id/buttonConvert"
+        android:layout_gravity="center_horizontal"
+        android:onClick="sendBroadcast"/>
+
+    <Button
+        android:id="@+id/btn_close_app"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/buttonConvert"
+        android:text="@string/buttonClose"
+        android:textAllCaps="false"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@color/colorBlack"
+        android:textColor="@color/colorWhite"
+        android:onClick="closeApp" />
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textViewResult"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
